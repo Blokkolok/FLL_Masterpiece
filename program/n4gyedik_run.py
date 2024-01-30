@@ -36,17 +36,8 @@ hajtas.straight(100)
 balfeltet.run_time(600, 2500) 
 balfeltet.run_time(-500, 500)
 
-
-#hajtas.straight(350)
-#hajtas.turn(-90)
-
-#hajtas.turn(-85)
-#hajtas.straight(385)
-#hajtas.turn(20)
-#hajtas.straight(55)
 #betolja az innovációs projektet meg a nénit meg a bácsit
 hajtas.straight(-150)
-#hajtas.turn(20)
 hajtas.turn(20)
 hajtas.straight(270)
 jobbfeltet.run_time(400, 1300)

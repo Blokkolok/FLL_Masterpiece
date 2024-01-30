@@ -54,7 +54,6 @@ else:
     hajtas.turn(85)
 
 # Kimenetel, végén időre hajtás
-#hajtas.straight(700)
 hajtas.drive(300, 0) 
 wait(3000)
 

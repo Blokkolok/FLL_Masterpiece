@@ -31,8 +31,6 @@ hajtas.turn(-60)
 hajtas.settings(200, 1000, 90, 900)
 hajtas.straight(100)
 hajtas.settings(300, 1000, 90, 900)
-#jobbfeltet.run_time(600, 1000)
-#jobbfeltet.run_time(-600, 1000)
 # Kitolja az embereket
 hajtas.turn(-110)
 hajtas.straight(220)

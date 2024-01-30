@@ -27,6 +27,5 @@ jobbfeltet.run_time(500, 1000, wait=False)
 balfeltet.run_time(600, 3000)
 
 # Kimenetel, végén időre hajtás
-#hajtas.straight(-650)
 hajtas.drive(-300, 0) 
 wait(2000)
