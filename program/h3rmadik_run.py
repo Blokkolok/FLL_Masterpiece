@@ -22,38 +22,23 @@ jobbfeltet = Motor(Port.F)
 hajtas = DriveBase(bal_motor, jobb_motor, wheel_diameter=56, axle_track=145)
 
 hub.light.on(Color.VIOLET)
-gombok = []
-narancsig = False
-while not (Button.RIGHT in gombok or Button.LEFT in gombok):
-    gombok = hub.buttons.pressed()
-    wait(10)
-    if  Button.LEFT in gombok:
-        hub.light.on(Color.ORANGE)
-        narancsig = True
 
 hajtas.use_gyro(True)
 hajtas.settings(300, 1000, 90, 900)
 # Kicsit ki és forful
-hajtas.straight(-100)
+hajtas.straight(100)
 hajtas.turn(10)
-# Hátramegy ráfordul rááll
-hajtas.straight(-545) #555
-hajtas.turn(-55)
-hajtas.straight(-230)
+#Előremegy ráfordul rááll
+hajtas.straight(595) #555
+hajtas.turn(-45)
+hajtas.straight(240)
+# Lecsap az emberre
+balfeltet.run_time(-700, 1000)
 
-hajtas.turn(-20)
-if narancsig:
-    hajtas.turn(20)
-    hajtas.straight(50)
-    wait(500)
-    hajtas.straight(-80)
-    hajtas.straight(95)
-    hajtas.turn(65)
-else:
-    hajtas.straight(95)
-    hajtas.turn(85)
+hajtas.straight(-95)
+hajtas.turn(55)
 
 # Kimenetel, végén időre hajtás
-hajtas.drive(300, 0) 
-wait(3000)
+hajtas.drive(-400, 0) 
+wait(2500)
 

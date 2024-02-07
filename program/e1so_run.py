@@ -19,44 +19,66 @@ balfeltet = Motor(Port.B)
 #balszinszenzor = ColorSensor(Port.A)
 #jobbszinszenzor = ColorSensor(Port.E)
 # Hajtás, motorok, kerék és tengelytáv megadása
-hajtas = DriveBase(bal_motor, jobb_motor, wheel_diameter=56, axle_track=145)
+hajtas = DriveBase(bal_motor, jobb_motor, wheel_diameter=56, axle_track=128)
 
 # Sárkány hátuljához
 hajtas.settings(300, 1500, 90, 900)
 hajtas.use_gyro(True)
 
-hajtas.straight(170)
+hajtas.straight(160)
 # Erőssen kanyarodunk, hogy kilökjük a sárkányt
 hajtas.settings(300, 1500, 400, 3000)
 hajtas.turn(22)
 # Vissza kanyar, vissza tolat
 hajtas.settings(300, 1500, 90, 900)
 hajtas.turn(-22)
-hajtas.straight(-300)
+hajtas.straight(-290)
 # Befordul és elmegy a hangkeverőig, közben leteszi a kart
 hajtas.turn(42)
-balfeltet.run_time(-600, 1500, wait=False)
-hajtas.straight(400)
+balfeltet.run_time(-600, 1000, wait=False)
+hajtas.straight(425)
 # emel és lassan megy 
 hajtas.settings(10, 1500, 30, 300)
-balfeltet.run_time(200, 2000, wait=False)
-wait(500)
+balfeltet.run_time(400, 1000, wait=False) #, wait=False
+wait(800)
 # kicsit közeleb megy emel
-hajtas.straight(10)
-
-
-
+#hajtas.straight(10)
 # Lassan kifordulunk a kezelőpult alól
-hajtas.settings(300, 1500, 30, 300)
-hajtas.turn(15)
-
-#néni begyüjtése sok lépésben
-#továbbfordul a pult után
+hajtas.settings(300, 1500, 30, 900)
+hajtas.turn(20)
+#hátramegy, hogy odamehessen a hajóhoz
 hajtas.settings(300, 1500, 90, 900)
-hajtas.turn(35)
-#olyan helyzetbe mozog hogy oda tudjon menni a nénihez
 hajtas.straight(-100)
-hajtas.turn(35)
+#odamegy a hajóhoz
+hajtas.turn(113)
+hajtas.curve(260, -85)
+hajtas.straight(90)
+#lecsapja a kart a kamerának
+balfeltet.run_time(-600, 1000, wait=False)
+wait(750)
+#behúzza a hajót a jó helyre
+hajtas.straight(-140)
+hajtas.turn(-35)
+#kifordul a hajótól
+balfeltet.run_time(600, 1000, wait=False)
+wait(200)
+hajtas.turn(20)
+#hátramegy, hogy odamenjen a nénihez
+hajtas.straight(-200)
+#jó irányba fordul, odamegy a nénihez
+hajtas.turn(-40)
+hajtas.straight(350)
+#lecsap, hazaviszi a nénit
+balfeltet.run_time(-600, 1000)
+#hajtas.straight(-100)
+hajtas.settings(400, 1500, 90, 900)
+hajtas.curve(-800, -45)
+#hajtas.drive(-500,0)
+#wait(1500)
+#felemeli a kart 
+balfeltet.run_time(600, 1000)
+
+'''hajtas.turn(35)
 hajtas.straight(300)
 hajtas.turn(-103)
 #odamegy a nénihez
@@ -66,7 +88,6 @@ balfeltet.run_time(-400, 1000)
 #fordulva haza megy
 hajtas.straight(-100)
 hajtas.turn(70)
-hajtas.straight(-480)
-
+hajtas.straight(-480)'''
 
 
