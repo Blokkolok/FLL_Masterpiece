@@ -57,12 +57,12 @@ hajtas.straight(90)
 balfeltet.run_time(-600, 1000, wait=False)
 wait(750)
 #behúzza a hajót a jó helyre
-hajtas.straight(-140)
-hajtas.turn(-35)
+hajtas.straight(-130)
+hajtas.turn(-45)
 #kifordul a hajótól
 balfeltet.run_time(600, 1000, wait=False)
 wait(200)
-hajtas.turn(20)
+hajtas.turn(30)
 #hátramegy, hogy odamenjen a nénihez
 hajtas.straight(-200)
 #jó irányba fordul, odamegy a nénihez
@@ -70,24 +70,14 @@ hajtas.turn(-40)
 hajtas.straight(350)
 #lecsap, hazaviszi a nénit
 balfeltet.run_time(-600, 1000)
-#hajtas.straight(-100)
-hajtas.settings(400, 1500, 90, 900)
-hajtas.curve(-800, -45)
-#hajtas.drive(-500,0)
-#wait(1500)
+hajtas.straight(-100)
+#hajtas.turn(30)
+#hajtas.settings(400, 1500, 90, 900)
+#hajtas.curve(-800, -30)
+hajtas.drive(-500, 25)
+wait(1000)
 #felemeli a kart 
 balfeltet.run_time(600, 1000)
 
-'''hajtas.turn(35)
-hajtas.straight(300)
-hajtas.turn(-103)
-#odamegy a nénihez
-hajtas.straight(115)
-#begyűjti a nénit
-balfeltet.run_time(-400, 1000)
-#fordulva haza megy
-hajtas.straight(-100)
-hajtas.turn(70)
-hajtas.straight(-480)'''
 
 

@@ -31,10 +31,9 @@ hajtas.turn(10)
 #Előremegy ráfordul rááll
 hajtas.straight(595) #555
 hajtas.turn(-45)
-hajtas.straight(240)
+hajtas.straight(210) 
 # Lecsap az emberre
 balfeltet.run_time(-700, 1000)
-
 hajtas.straight(-95)
 hajtas.turn(55)
 

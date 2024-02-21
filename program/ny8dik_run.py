@@ -22,19 +22,17 @@ hajtas = DriveBase(bal_motor, jobb_motor, wheel_diameter=56, axle_track=145)
 
 hajtas.settings(700, 1000, 90, 900)
 hajtas.use_gyro(True)
-# Odamegy Filmnél lerakja 
-hajtas.straight(850)
-# Filmnél lerakja 
-jobbfeltet.run_time(500, 1000)
-# Odamegy popkornhoz
-hajtas.straight(290)
-hajtas.turn(25)
-hajtas.straight(470)
+
+#betolja a kék szakértőt
+hajtas.straight(-900)
+jobbfeltet.run_time(-500, 1000)
+#odamegy a zöld szakértő helyéhez
+hajtas.turn(20)
+hajtas.straight(-600)
 hajtas.turn(65)
-#hajtas.straight(60)
-# Popkornnál lerakja 
-jobbfeltet.run_time(500, 1000)
-# Odamegy gördeszka
-hajtas.straight(260)
-hajtas.turn(40)
-hajtas.straight(230)
+hajtas.straight(-270)
+hajtas.turn(45)
+#felcsapja a kart hogy othagyja a zöld szakértőt
+balfeltet.run_time(500, 1000)
+#bemegy a lila szakértővel a területére
+hajtas.straight(-390)

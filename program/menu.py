@@ -9,22 +9,23 @@ elozo = hub.system.storage(0,read=1)
 
 # Választási lehetőségek, hogy a következő legyen az első
 if elozo == b'\x01':
-   selected = hub_menu("2", "3", "4", "5", "6", "7", "1") 
+   selected = hub_menu("2", "3", "4", "5", "6", "7", "A", "1") 
 elif elozo == b'\x02':
-    selected = hub_menu("3", "4", "5", "6", "7", "1", "2")
+    selected = hub_menu("3", "4", "5", "6", "7", "A", "1", "2")
 elif elozo == b'\x03':
-    selected = hub_menu("4", "5", "6", "7", "1", "2", "3")
+    selected = hub_menu("4", "5", "6", "7", "A", "1", "2", "3")
 elif elozo == b'\x04':
-    selected = hub_menu("5", "6", "7", "1", "2", "3", "4")
+    selected = hub_menu("5", "6", "7", "A", "1", "2", "3", "4")
 elif elozo == b'\x05':
-    selected = hub_menu("6", "7", "1", "2", "3", "4", "5")
+    selected = hub_menu("6", "7", "A", "1", "2", "3", "4", "5")
 elif elozo == b'\x06':
-    selected = hub_menu("7", "1", "2", "3", "4", "5", "6")
+    selected = hub_menu("7", "A", "1", "2", "3", "4", "5", "6")
 else:
-    selected = hub_menu("1", "2", "3", "4", "5", "6", "7")
+    selected = hub_menu("1", "2", "3", "4", "5", "6", "7", "A")
 # Utoljára indított tárolása
-irando= [int(selected)]
-hub.system.storage(0, write=bytes(irando))
+if selected !=  "A" :
+    irando= [int(selected)]
+    hub.system.storage(0, write=bytes(irando))
 
 # Programok futtatása a választás alapján
 if selected == "1":
@@ -41,3 +42,5 @@ elif selected == "6":
     import h7tedik_run
 elif selected == "7":
     import ny8dik_run
+elif selected == "A":
+    import akkumlator
