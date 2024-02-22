@@ -1,6 +1,6 @@
 # Robot design
 A robotunk egy spike vezérlővel működik. A spike nagy előnye szerintünk, hogy mint az agy és a motorok is sokkal kisebb méretűek és kompaktabbak ezért jobban lehet velük építeni.
-Viszont a motorjuk is egy kicsit gyengébb, ezért az eddigi években, hogy gyorsak legyen kicsi robotokat építettünk. Ezeknek a kicsi könnyű robotoknak viszont az volt a nagy hátrányuk, hogy ha nagyobb erőt kellet kifejteni akkor felborultak, megcsúsztak és nem bírták megcsinálni, amit kellet volna.
+Viszont a motorjuk is egy kicsit gyengébb, ezért az eddigi években, hogy gyorsabbak legyenek kicsi robotokat építettünk. Ezeknek a kicsi könnyű robotoknak viszont az volt a nagy hátrányuk, hogy ha nagyobb erőt kellet kifejteni akkor felborultak, megcsúsztak és nem bírták megcsinálni, amit kellet volna.
 ![Image Alt text](/robot/képek/robot.jpg)
 Ezért idén úgy döntöttünk, hogy inkább egy nagyobb nehezebb és sokkal stabilabb robotot építünk, és így sokkal gyorsabb sebbeségnél, nagyobb gyorsulással sem csúszik meg.
 ![Image Alt text](/robot/képek/suly.jpg)
