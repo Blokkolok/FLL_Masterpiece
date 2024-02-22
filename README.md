@@ -3,10 +3,11 @@ Egy budapesti baráti csapat vagyunk, bővebben blogunkon: https://www.blokkolok
 
 A magyarországi verseny honlapja: https://www.firstlegoleague.hu/challenge.htm
 
-# Code Stucture
-A Lego Spike programokat Pybricks-ben (Python) programoztuk.
-
-A modelleket a Bricklink-es Studio 2.0-ban terveztük.
+## Részletek
+- A Lego Spike [programokat](program/README.md) Pybricks-ben (Python) programoztuk.
+- A robot tervezésének [részletei](robot/Robot.md)
+- Az indítások és útvonalak [tervezése](robot/Taktika.md)
+- A [modelleket](robot/feltétek) a Bricklink-es Studio 2.0-ban terveztük.
 
 -----------------------------------------------------------------------------------------------------------------------------------
-Reméljük tudtok valamit használni a munkánkból. Tegyétek bátran!
+Indítsatok ti is FLL csapapot! Építsetek és programozzatok robotot!
