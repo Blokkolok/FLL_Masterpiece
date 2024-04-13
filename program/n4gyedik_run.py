@@ -24,7 +24,7 @@ hajtas.settings(300, 1500, 90, 900)
 hajtas.use_gyro(True)
 
 #felcsapja a kart
-balfeltet.run_time(-400, 700, wait=False)
+balfeltet.run_time(600, 1000, wait=False)
 jobbfeltet.run_time(-150, 2000, wait=False)
 #odamegy a virtuális izéhez
 jobbfeltet.run_time(-150, 2000, wait=False)
@@ -33,8 +33,8 @@ hajtas.curve(500, -50)
 hajtas.straight(250)
 hajtas.turn(-40)
 hajtas.straight(100)
-balfeltet.run_time(600, 2500) 
-balfeltet.run_time(-500, 500)
+balfeltet.run_time(-900, 2000) 
+balfeltet.run_time(800, 500)
 
 #betolja az innovációs projektet meg a nénit meg a bácsit
 hajtas.straight(-150)
@@ -49,14 +49,14 @@ hajtas.straight(270)
 hajtas.turn(45)
 hajtas.straight(-255)
 hajtas.turn(45)
-balfeltet.run_time(400, 700, wait=False)
+balfeltet.run_time(-600, 700, wait=False)
 hajtas.straight(210)
 #feltolja a tornyot és beejti a tagot
-balfeltet.run_time(-300, 5000)
+balfeltet.run_time(450, 5000)
 #megcsinálja a virágot
-balfeltet.run_time(400, 800)
+balfeltet.run_time(-600, 800)
 #balfeltet.stop() 
-balfeltet.run_time(-150, 2500, wait=False)
+balfeltet.run_time(400, 2500, wait=False)
 hajtas.straight(-80)
 hajtas.turn(-110)
 hajtas.straight(180)
